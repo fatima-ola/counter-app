@@ -1,0 +1,16 @@
+button {
+  margin: 20px;
+  background-color: rgb(205, 50, 115);
+  color: white;
+  border-radius: 5px;
+  border-color: rgb(205, 50, 115);
+}
+
+body {
+  background-color: rgb(163, 240, 240);
+}
+
+p {
+  text-decoration: underline;
+  font-size: 1.5rem;
+}

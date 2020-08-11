@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './CounterNumber.css';
 
 class CounterNumber extends Component {
   constructor() {
@@ -36,12 +37,12 @@ class CounterNumber extends Component {
   render() {
     return (
       <div>
-        <h1>Counting in 1's</h1>
+        <p>Counting in 1's</p>
         <h1>{this.state.number}</h1>
         <button onClick={this.addOne}>ADD 1</button>
         <button onClick={this.subtractOne}>SUBTRACT 1</button>
         <div>
-          <h1>Counting in 5's</h1>
+          <p>Counting in 5's</p>
           <h1>{this.state.counterFive}</h1>
           <button onClick={this.addFive}>ADD 5</button>
           <button onClick={this.subtractFive}>SUBTRACT 5</button>
