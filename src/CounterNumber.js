@@ -6,27 +6,46 @@ class CounterNumber extends Component {
 
     this.state = {
       number: 0,
+      counterFive: 0,
     };
   }
 
-  //   addNumbers = () => {
-  //     this.setState({
-  //       number: this.state.number + 1,
-  //     });
-  //   };
+  addOne = () => {
+    this.setState({
+      number: this.state.number + 1,
+    });
+  };
 
-  //   subtractNumbers = () => {
-  //     this.setState({
-  //       number: this.state.number - 1,
-  //     });
-  //   };
+  subtractOne = () => {
+    this.setState({
+      number: this.state.number - 1,
+    });
+  };
 
+  addFive = () => {
+    this.setState({
+      counterFive: this.state.counterFive + 5,
+    });
+  };
+
+  subtractFive = () => {
+    this.setState({
+      counterFive: this.state.counterFive - 5,
+    });
+  };
   render() {
     return (
       <div>
-        {/* <h1>{this.state.number}</h1>
-        <button onClick={this.addNumbers}>ADD 1</button>
-        <button onClick={this.subtractNumbers}>SUBTRACT 1</button> */}
+        <h1>Counting in 1's</h1>
+        <h1>{this.state.number}</h1>
+        <button onClick={this.addOne}>ADD 1</button>
+        <button onClick={this.subtractOne}>SUBTRACT 1</button>
+        <div>
+          <h1>Counting in 5's</h1>
+          <h1>{this.state.counterFive}</h1>
+          <button onClick={this.addFive}>ADD 5</button>
+          <button onClick={this.subtractFive}>SUBTRACT 5</button>
+        </div>
       </div>
     );
   }
