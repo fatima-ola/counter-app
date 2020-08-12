@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+##Click the link below to view my counter app
+## https://fatima-ola.github.io/counter-app/
+
 ## Available Scripts
 
 In the project directory, you can run:
